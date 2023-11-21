@@ -1,0 +1,152 @@
+.trip {
+
+  margin-bottom: 200px;
+
+  @include on1110 {
+    margin-bottom: 100px;
+  }
+
+  @include on700 {
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    max-width: 1560px;
+    margin: 0 auto;
+    display: flex;
+
+    @include on1110 {
+      align-items: center;
+    }
+
+    @include on700 {
+      display: block;
+    }
+  }
+
+  &__description {
+    // flex-basis: 960px;
+    padding: 0 260px 0 160px;
+
+    @include on1580 {
+      padding-left: 160px;
+      padding-right: 100px;
+    }
+
+    @include on1450 {
+      padding: 0 20px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 108px;
+
+    @include on1110 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__timetable-box {
+    @include on700 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+
+  &__timetable {
+    margin-bottom: 50px;
+
+    &--second {
+      margin-bottom: 22px;
+    }
+
+    @include on1110 {
+      margin-bottom: 20px;
+    }
+
+    @include on700 {
+      max-width: 200px;
+    }
+
+    @include on510 {
+      max-width: 130px;
+    }
+  }
+
+  &__day {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+
+    @include on1110 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+
+  &__item {
+    font-size: 24px;
+
+    @include on1110 {
+      font-size: 18px;
+    }
+  }
+
+  &__swiper {
+    // margin-left: 0;
+    flex-basis: 960px;
+    // flex-shrink: 0;
+    position: relative;
+    
+  }
+
+  &__slide {
+    position: relative;
+    height: 1095px;
+    width: 960px;
+
+    @include on1110 {
+      height: 700px;
+    }
+
+    @include on820 {
+      height: 500px;
+    }
+
+    @include on510 {
+      height: 350px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__left {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    transform: translateY(-50%);
+  }
+
+  &__right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 3;
+    transform: translateY(-50%);
+  }
+
+  &__button {
+    @include on700 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.nav-mobile {
+  display: none;
+  
+  @include on700 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+  }
+  
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+}

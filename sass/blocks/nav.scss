@@ -1,0 +1,60 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include on700 {
+      display: none;
+    }
+
+
+  &__list {
+    display: flex;
+    gap: 49px;
+  }
+
+  &__link {
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 0.5s ease;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @include on820 {
+      font-size: 18px;
+    }
+  }
+
+  &__link-tel {
+    position: relative;
+
+    @include on510 {
+      font-size: 16px;
+    }
+
+    &::before {
+      content: '';
+      background-image: url("../images/header/phone.svg");
+      background-size: cover;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 190px;
+
+      @include on820 {
+        width: 24px;
+        height: 24px;
+        right: 150px;
+      }
+
+      @include on510 {
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        right:125px
+      }
+    }
+  }
+}

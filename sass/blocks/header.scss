@@ -1,0 +1,88 @@
+.header {
+  background-image: url("../images/header/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 554px;
+  position: relative;
+  margin-bottom: 200px;
+
+  @include on1070 {
+    padding-bottom: 400px;
+    margin-bottom: 100px;
+  }
+
+  @include on700 {
+    padding-bottom: 250px;
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    padding-top: 72px;
+
+    @include on1070 {
+      padding-top: 50px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 152px;
+
+    @include on1070 {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-family: 'Balqis', sans-serif;
+    font-size: 250px;
+    position: relative;
+
+    @include on1070 {
+      font-size: 190px;
+    }
+
+    @include on820 {
+      font-size: 150px;
+    }
+
+    @include on650 {
+      font-size: 120px;
+    }
+
+    @include on510 {
+      font-size: 80px;
+    }
+
+    &::after {
+      content: "Ексклюзивний тур";
+      font-size: 56px;
+      font-style: italic;
+      font-weight: 300;
+      position: absolute;
+      right: 80px;
+      bottom: 0;
+
+      @include on1070 {
+        right: 150px;
+        font-size: 40px;
+      }
+
+      @include on820 {
+        font-size: 28px;
+        right: 100px;
+      }
+
+      @include on650 {
+        font-size: 22px;
+        right: 60px;
+      }
+
+      @include on510 {
+        font-size: 16px;
+        right: 40px;
+      }
+    }
+  }
+}

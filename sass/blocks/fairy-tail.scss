@@ -1,0 +1,110 @@
+.fairy-tail {
+  margin-bottom: 200px;
+
+  @include on1110 {
+    margin-bottom: 100px;
+  }
+
+  @include on700 {
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+    margin-bottom: 107px;
+
+    @include on1070 {
+      margin-bottom: 80px;
+    }
+
+    @include on700 {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__content {
+    max-width: 1560px;
+    margin: 0 auto;
+    display: flex;
+    gap: 55px;
+    align-items: center;
+
+    // @include on1300 {
+    //   flex-direction: column;
+    // }
+
+    @include on700 {
+      display: block;
+    }
+  }
+
+  &__swiper {
+    // margin-left: 0;
+    flex-basis: 960px;
+    // flex-shrink: 0;
+    position: relative;
+  }
+
+  &__slide {
+    position: relative;
+      height: 700px;
+    
+      @include on820 {
+        height: 500px;
+      }
+    
+      @include on510 {
+        height: 350px;
+      }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__left {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    transform: translateY(-50%);
+  }
+
+  &__right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 3;
+    transform: translateY(-50%);
+  }
+
+  &__descr {
+    flex-basis: 545px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    // padding-right: 360px;
+
+    @include on1300 {
+      gap: 20px;
+    }
+
+    @include on700 {
+      padding: 10px;
+    }
+  }
+
+  &__text {
+
+    &--bold {
+      font-weight: 400;
+    }
+
+    &--sm {
+      max-width: 278px;
+    }
+  }
+}

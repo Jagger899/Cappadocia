@@ -1,0 +1,97 @@
+.hotel {
+    margin-bottom: 200px;
+  
+    @include on1110 {
+      margin-bottom: 100px;
+    }
+  
+    @include on700 {
+      margin-bottom: 50px;
+    }
+
+  &__logo {
+    margin-bottom: 100px;
+
+    @include on700 {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 100px;
+
+    @include on1240 {
+      align-items: center;
+    }
+
+    @include on1070 {
+      display: block;
+    }
+  }
+
+  &__main-photo {
+    // height: 500px;
+    // text-align: center;
+    @include on1070 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__main-photo img {
+
+    @include on1070 {
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      margin: auto;
+    }
+  
+  }
+
+  &__content {
+    flex-basis: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    @include on1240 {
+      flex-basis: 500px;
+    }
+
+    @include on1240 {
+      gap: 50px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include on1240 {
+      gap: 10px;
+    }
+  }
+
+  &__photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 40px;
+
+    @include on510 {
+      gap: 20px;
+    }
+  }
+
+  &__photo {
+    @include on1240 {
+      width: 200px;
+    }
+
+    @include on510 {
+      max-width: 160px;
+      margin: 0 auto;
+    }
+  }
+}
