@@ -1,0 +1,78 @@
+.footer {
+  background-image: url("../images/footer/bg-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 96px 0 557px;
+
+  @include on820 {
+    padding-bottom: 96px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__contacts {
+    border: 1px solid red;
+    padding: 91px 64px 187px 67px;
+    background-image: url("../images/footer/ball.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__title {
+    color: #E2AB3F;
+    font-family: Balqis;
+    font-size: 86px;
+    margin-bottom: 50px;
+  }
+
+  &__link-tel {
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url("../images/footer/phone.svg");
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: -4px;
+      left: -40px;
+    }
+  }
+
+  &__link-mail {
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url("../images/footer/mail.svg");
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: -4px;
+      left: -40px;
+    }
+  }
+
+  &__socials {
+    margin-top: 18px;
+    display: flex;
+    gap: 15px;
+  }
+
+  &__text {
+    font-family: 'Balqis', sans-serif;
+    font-size: 86px;
+
+  }
+
+}

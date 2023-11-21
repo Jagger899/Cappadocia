@@ -91,6 +91,10 @@
     @include on1110 {
       font-size: 18px;
     }
+
+    @include on510 {
+      font-size: 16px;
+    }
   }
 
   &__swiper {
