@@ -922,6 +922,11 @@ a {
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 700px) {
+  .footer__container {
+    display: block;
+  }
+}
 .footer__contacts {
   border: 1px solid red;
   padding: 91px 64px 187px 67px;
@@ -934,11 +939,22 @@ a {
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 700px) {
+  .footer__contacts {
+    background-size: contain;
+  }
+}
 .footer__title {
   color: #E2AB3F;
   font-family: Balqis;
   font-size: 86px;
   margin-bottom: 50px;
+}
+@media (max-width: 700px) {
+  .footer__title {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
 }
 .footer__link-tel {
   position: relative;
@@ -946,11 +962,20 @@ a {
 .footer__link-tel::before {
   content: "";
   background-image: url("../images/footer/phone.svg");
+  background-position: center;
+  background-size: cover;
   position: absolute;
   width: 30px;
   height: 30px;
   top: -4px;
   left: -40px;
+}
+@media (max-width: 510px) {
+  .footer__link-tel::before {
+    width: 24px;
+    height: 24px;
+    left: -30px;
+  }
 }
 .footer__link-mail {
   position: relative;
@@ -959,10 +984,19 @@ a {
   content: "";
   background-image: url("../images/footer/mail.svg");
   position: absolute;
+  background-position: center;
+  background-size: cover;
   width: 30px;
   height: 30px;
   top: -4px;
   left: -40px;
+}
+@media (max-width: 510px) {
+  .footer__link-mail::before {
+    width: 24px;
+    height: 24px;
+    left: -30px;
+  }
 }
 .footer__socials {
   margin-top: 18px;
@@ -972,6 +1006,11 @@ a {
 .footer__text {
   font-family: "Balqis", sans-serif;
   font-size: 86px;
+}
+@media (max-width: 700px) {
+  .footer__text {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
