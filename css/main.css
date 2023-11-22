@@ -75,7 +75,7 @@ a {
 }
 
 .header {
-  background-image: url("../images/header/header-bg.jpg");
+  background-image: url("../images/header/header-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -804,7 +804,7 @@ a {
 }
 @media (max-width: 700px) {
   .application__reg {
-    background-image: url("../images/application/bg-balls.jpg");
+    background-image: url("../images/application/bg-balls.webp");
   }
 }
 .application__info {
@@ -901,12 +901,13 @@ a {
 }
 @media (max-width: 700px) {
   .form__button {
-    opacity: 0.6;
+    opacity: 0.7;
+    background-color: #E9E9EB;
   }
 }
 
 .footer {
-  background-image: url("../images/footer/bg-footer.jpg");
+  background-image: url("../images/footer/bg-footer.webp");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 96px 0 557px;
@@ -928,7 +929,6 @@ a {
   }
 }
 .footer__contacts {
-  border: 1px solid red;
   padding: 91px 64px 187px 67px;
   background-image: url("../images/footer/ball.png");
   background-repeat: no-repeat;

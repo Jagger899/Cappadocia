@@ -19,5 +19,10 @@ const swiper2 = new Swiper('.trip__swiper', {
     nextEl: '.swiper-button-right',
     prevEl: '.swiper-button-left',
   },
+});
 
+const form = document.getElementById("form");
+
+form.addEventListener('click', function (event) {
+  event.preventDefault();
 });
