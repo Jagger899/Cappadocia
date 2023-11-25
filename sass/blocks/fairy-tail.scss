@@ -9,8 +9,14 @@
     margin-bottom: 50px;
   }
 
+  &__container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
   &__logo {
-    margin-bottom: 107px;
+    margin-bottom: 101px;
+    margin-right: 10px;
 
     @include on1070 {
       margin-bottom: 80px;
@@ -23,7 +29,7 @@
 
   &__content {
     max-width: 1560px;
-    margin: 0 auto;
+    // margin: 0 auto;
     display: flex;
     gap: 55px;
     align-items: center;
@@ -32,13 +38,13 @@
     //   flex-direction: column;
     // }
 
-    @include on700 {
+    @include on820 {
       display: block;
     }
   }
 
   &__swiper {
-    // margin-left: 0;
+    margin-left: 0;
     flex-basis: 960px;
     // flex-shrink: 0;
     position: relative;
@@ -87,18 +93,19 @@
     flex-direction: column;
     gap: 50px;
     // padding-right: 360px;
+    // margin-bottom: 16px;
 
     @include on1300 {
       gap: 20px;
     }
 
-    @include on700 {
+    @include on820 {
       padding: 10px;
     }
   }
 
   &__text {
-
+    line-height: 1.2;
     &--bold {
       font-weight: 400;
     }
@@ -106,5 +113,9 @@
     &--sm {
       max-width: 278px;
     }
+
+    // &--second{
+    //   margin-bottom: 3px;
+    // }
   }
 }

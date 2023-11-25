@@ -1,6 +1,8 @@
 .trip {
-
-  margin-bottom: 200px;
+  display: flex;
+  justify-content: right;
+  
+  margin-bottom: 188px;
 
   @include on1110 {
     margin-bottom: 100px;
@@ -12,21 +14,26 @@
 
   &__container {
     max-width: 1560px;
-    margin: 0 auto;
+    // margin: 0 0 0 auto;
     display: flex;
+    gap: 104px;
 
     @include on1110 {
       align-items: center;
+      gap: 10px;
     }
 
-    @include on700 {
+    @include on820 {
       display: block;
     }
   }
 
   &__description {
-    // flex-basis: 960px;
-    padding: 0 260px 0 160px;
+    // flex-basis: 330px;
+    // padding: 0 260px 0 170px;
+    // padding-left: 170px;
+    margin-bottom: 10px;
+    padding-left: 20px;
 
     @include on1580 {
       padding-left: 160px;
@@ -39,7 +46,8 @@
   }
 
   &__logo {
-    margin-bottom: 108px;
+    margin-bottom: 102px;
+    width: 330px; 
 
     @include on1110 {
       margin-bottom: 40px;
@@ -47,7 +55,7 @@
   }
 
   &__timetable-box {
-    @include on700 {
+    @include on820 {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
@@ -55,10 +63,12 @@
   }
 
   &__timetable {
-    margin-bottom: 50px;
+    margin-bottom: 46px;
+    width: 296px;
 
     &--second {
       margin-bottom: 22px;
+      width: 296px;
     }
 
     @include on1110 {
@@ -78,6 +88,8 @@
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 400;
+    line-height: 1.1;
+    
 
     @include on1110 {
       margin-bottom: 10px;
@@ -87,6 +99,7 @@
 
   &__item {
     font-size: 24px;
+    font-weight: 300;
 
     @include on1110 {
       font-size: 18px;
@@ -99,9 +112,11 @@
 
   &__swiper {
     // margin-left: 0;
-    flex-basis: 960px;
+    flex-basis: 954px;
     // flex-shrink: 0;
     position: relative;
+    margin-right: 0;
+    transform: translate(14px, -2px);
     
   }
 
@@ -148,9 +163,17 @@
   }
 
   &__button {
+
+    @include on820 {
+      padding: 6px 10px;
+      font-size: 16px;
+    }
+
     @include on700 {
       margin-bottom: 20px;
+      display: block;
       text-align: center;
+      max-width: 200px;
     }
   }
 }

@@ -1,5 +1,5 @@
 .application {
-
+  padding-left: 24px;
   margin-bottom: 200px;
   
     @include on1110 {
@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     gap: 124px;
-    flex-basis: 613px;
+    flex-basis: 486px;
 
     @include on1170 {
       gap: 50px;
@@ -50,8 +50,14 @@
   &__info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     align-items: flex-end;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+
+  &__price {
+    transform: translate(-8px, 7px);
   }
 
   &__text {
@@ -69,7 +75,7 @@
       font-weight: 300;
       font-style: italic;
       color: #000;
-      transform: translate(100px, -24px);
+      transform: translate(141px, -30px);
       margin-bottom: -70px;
 
       @include on950 {
@@ -83,12 +89,17 @@
       font-size: 24px;
       font-weight: 300;
       color: #000;
-      transform: translate(72px, -20px);
+      transform: translate(122px, -28px);
 
       @include on950 {
         font-size: 18px;
       }
     }
+  }
+
+  &__form {
+    margin-left: 110px;
+    transform: translateY(-50px);
   }
 
   &__form-title {
@@ -100,6 +111,7 @@
   }
 
   &__photo {
+    flex-basis: 600px;
     @include on700 {
       display: none;
     }
