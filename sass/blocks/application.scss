@@ -1,6 +1,10 @@
 .application {
   padding-left: 24px;
   margin-bottom: 200px;
+
+    @include on1899 {
+      padding-left: 0;
+    }
   
     @include on1110 {
       margin-bottom: 100px;
@@ -34,12 +38,12 @@
 
     @include on1170 {
       gap: 50px;
-      flex-basis: 500px;
+      flex-basis: 400px;
     }
 
-    @include on950 {
+    @include on1024 {
       gap:0;
-      flex-basis: 400px;
+      flex-basis: 300px;
     }
 
     @include on700 {
@@ -100,6 +104,15 @@
   &__form {
     margin-left: 110px;
     transform: translateY(-50px);
+
+    @include on1899 {
+      transform:translateY(50px);
+      margin-left: 0;
+    }
+
+    @include on700 {
+      transform: translateY(0);
+    }
   }
 
   &__form-title {
@@ -112,6 +125,10 @@
 
   &__photo {
     flex-basis: 600px;
+
+    @include on870 {
+      flex-basis: 500px;
+    }
     @include on700 {
       display: none;
     }

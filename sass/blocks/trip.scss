@@ -4,6 +4,10 @@
   
   margin-bottom: 188px;
 
+  @include on1899 {
+    display: block;
+  }
+
   @include on1110 {
     margin-bottom: 100px;
   }
@@ -11,6 +15,7 @@
   @include on700 {
     margin-bottom: 50px;
   }
+
 
   &__container {
     max-width: 1560px;
