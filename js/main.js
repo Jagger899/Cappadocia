@@ -40,7 +40,6 @@ window.addEventListener('scroll', function () {
 window.addEventListener('scroll', function () {
   const scrollPosition = window.scrollY;
   console.log(scrollPosition);
-
   if (scrollPosition === 0) {
     header.classList.remove('header--sticky');
     tour.classList.remove('tour--with-margin');

@@ -91,6 +91,12 @@ a {
   padding-right: 4px;
   padding-left: 20px;
 }
+@media (max-width: 1899px) {
+  .header__container {
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+}
 @media (max-width: 1070px) {
   .header__container {
     padding-top: 50px;
