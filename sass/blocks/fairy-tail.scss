@@ -5,6 +5,10 @@
     margin-bottom: 100px;
   }
 
+  // @include on1000 {
+  //   margin-bottom: 0;
+  // }
+
   @include on700 {
     margin-bottom: 50px;
   }
@@ -18,12 +22,16 @@
     margin-bottom: 101px;
     margin-right: 10px;
 
-    @include on1070 {
+    @include on1300 {
       margin-bottom: 80px;
     }
 
-    @include on700 {
+    @include on1070 {
       margin-bottom: 60px;
+    }
+
+    @include on700 {
+      margin-bottom: 40px;
     }
   }
 
@@ -33,12 +41,15 @@
     display: flex;
     gap: 55px;
     align-items: center;
+    @include on1901 {
+      margin: 0 auto;
+    }
 
     // @include on1300 {
     //   flex-direction: column;
     // }
 
-    @include on820 {
+    @include on1000 {
       display: block;
     }
   }
@@ -57,9 +68,13 @@
       @include on820 {
         height: 500px;
       }
+
+      @include on650 {
+        height: 350px;
+      }
     
       @include on510 {
-        height: 350px;
+        height: 250px;
       }
   }
 
@@ -70,6 +85,15 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    @include on1300 {
+      object-fit: contain;
+      object-position: center;
+    }
+
+    @include on1000 {
+      object-fit: cover;
+    }
   }
 
   &__left {
@@ -99,13 +123,17 @@
       gap: 20px;
     }
 
-    @include on820 {
+    @include on1000 {
       padding: 10px;
     }
   }
 
   &__text {
     line-height: 1.2;
+
+    @include on1300 {
+      font-size: 16px;
+    }
     &--bold {
       font-weight: 400;
     }

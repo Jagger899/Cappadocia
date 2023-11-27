@@ -1,3 +1,9 @@
+@mixin on1901 {
+  @media (min-width: 1901px) {
+    @content;
+  }
+}
+
 @mixin on1899 {
   @media (max-width: 1899px) {
     @content;
@@ -52,6 +58,12 @@
   }
 }
 
+@mixin on1000 {
+  @media (max-width: 1070px) {
+    @content;
+  }
+}
+
 @mixin on950 {
   @media (max-width: 950px) {
     @content;
@@ -84,6 +96,12 @@
 
 @mixin on650 {
   @media (max-width: 650px) {
+    @content;
+  }
+}
+
+@mixin on550 {
+  @media (max-width: 550px) {
     @content;
   }
 }

@@ -14,7 +14,7 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="header">
+  <div class="header" id="header">
     <div class="container header__container">
       <div class="nav header__nav">
         <ul class="nav__list">
@@ -30,7 +30,7 @@
         </a>
         <a href="" class="nav__link nav__link-tel">+38(066)555-777-6</a>
       </div>
-        <h1 class="header__title">Cappadocia</h1>
+        
     </div>
     <div class="mobile-menu header__mobile-menu" id="mobile-menu">
       <div class="mobile-menu__container">
@@ -129,6 +129,11 @@
       
     </div>
   </div>
+  <section class="tour" id="tour">
+    <div class="container tour__container">
+      <h1 class="tour__title">Cappadocia</h1>
+    </div>
+  </section>
   <section class="fairy-tail">
     <div class="container fairy-tail__container">
       <img src="./images/fairy-tale/logo.png" alt="" class="fairy-tail__logo">
@@ -137,13 +142,29 @@
         <div class="swiper fairy-tail__swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide fairy-tail__slide">
-              <img src="./images/fairy-tale/img1.webp" class="fairy-tail__img" alt="">
+              <picture>
+                <source srcset="./images/fairy-tale/img1.webp">
+                <source srcset="./images/fairy-tale/img1.jpg">
+
+                <img src="./images/fairy-tale/img1.jpg" class="fairy-tail__img" alt="photo">
+              </picture>
+              
             </div>
             <div class="swiper-slide fairy-tail__slide">
-              <img src="./images/fairy-tale/img2.webp" class="fairy-tail__img" alt="">
+              <picture>
+                <source srcset="./images/fairy-tale/img2.webp" type="image/webp">
+                <source srcset="./images/fairy-tale/img2.jpg" type="image/jpeg"> 
+              
+                <img src="./images/fairy-tale/img2.jpg" class="fairy-tail__img" alt="photo">
+              </picture>
             </div>
             <div class="swiper-slide fairy-tail__slide">
-              <img src="./images/fairy-tale/img3.webp" class="fairy-tail__img" alt="">
+              <picture>
+                <source srcset="./images/fairy-tale/img3.webp" type="image/webp">
+                <source srcset="./images/fairy-tale/img3.jpg" type="image/jpeg">
+              
+                <img src="./images/fairy-tale/img3.jpg" class="fairy-tail__img" alt="photo">
+              </picture>
             </div>
           </div>
           <div class="fairy-tail__left swiper-button-left">
@@ -220,13 +241,28 @@
       <div class="swiper trip__swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide trip__slide">
-            <img src="./images/trip/img1.webp" class="trip__img" alt="">
+            <picture>
+              <source srcset="./images/trip/img1.webp" type="image/webp" class="trip__img">
+              <source srcset="./images/trip/img1.jpg" type="image/jpeg" class="trip__img">
+
+              <img src="./images/trip/img1.webp" class="trip__img" alt="photo">
+            </picture>
           </div>
           <div class="swiper-slide trip__slide">
-            <img src="./images/trip/img2.webp" class="trip__img" alt="">
+            <picture>
+              <source srcset="./images/trip/img2.webp" type="image/webp" class="trip__img">
+              <source srcset="./images/trip/img2.jpg" type="image/jpeg" class="trip__img">
+            
+              <img src="./images/trip/img2.jpg" class="trip__img" alt="photo">
+            </picture>
           </div>
           <div class="swiper-slide trip__slide">
-            <img src="./images/fairy-tale/img3.webp" class="trip__img" alt="">
+            <picture>
+              <source srcset="./images/trip/img3.webp" type="image/webp" class="trip__img">
+              <source srcset="./images/trip/img3.jpg" type="image/jpeg" class="trip__img">
+            
+              <img src="./images/trip/img3.jpg" class="trip__img" alt="photo">
+            </picture>
           </div>
         </div>
         <div class="trip__left swiper-button-left">
@@ -245,7 +281,12 @@
     </div>
     <div class="container hotel__container">
       <div class="hotel__main-photo">
-        <img src="./images/hotel/img1.webp" alt="hotel">
+        <picture>
+          <source srcset="./images/hotel/img1.webp" type="image/webp">
+          <source srcset="./images/hotel/img1.jpg" type="image/jpeg">
+        
+          <img src="./images/hotel/img1.jpg" class="hotel__img" alt="photo">
+        </picture>
       </div>
       <div class="hotel__content">
         <div class="hotel__description">
@@ -319,7 +360,12 @@
         </div>
       </div>
       <div class="application__photo">
-        <img src="./images/application/img.webp" alt="photo" class="application__img">
+        <picture>
+          <source srcset="./images/application/img.webp" type="image/webp">
+          <source srcset="./images/application/img.jpg" type="image/jpeg">
+        
+          <img src="./images/application/img.jpg" class="application__img" alt="photo">
+        </picture>
       </div>
     </div>
   </section>

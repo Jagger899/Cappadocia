@@ -110,6 +110,10 @@
       font-size: 18px;
     }
 
+    @include on1000 {
+      font-size: 16px;
+    }
+
     @include on510 {
       font-size: 16px;
     }
@@ -122,6 +126,11 @@
     position: relative;
     margin-right: 0;
     transform: translate(14px, -2px);
+    overflow: hidden;
+
+    @include on1899 {
+      transform: translate(0);
+    }
     
   }
 

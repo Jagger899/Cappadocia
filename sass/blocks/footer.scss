@@ -1,7 +1,14 @@
 .footer {
-  background-image: url("../images/footer/bg-footer.webp");
+  background-image: url("../images/footer/bg-footer.jpg");
   background-repeat: no-repeat;
   // background-size:cover;
+  // background-position: center;
+
+  @include on1901 {
+    background-size: cover;
+    background-position: center;
+  }
+  
   padding: 96px 0 489px;
 
   @include on820 {

@@ -25,6 +25,8 @@
     @include on700 {
       gap: 30px;
       display: block;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
@@ -48,6 +50,8 @@
 
     @include on700 {
       background-image: url("../images/application/bg-balls.webp");
+      background-position: center;
+      background-size: cover;
     }
   }
 
@@ -69,6 +73,10 @@
     font-size: 96px;
     color: #E2AB3F;
 
+    @include on1024 {
+      font-size: 80px;
+    }
+
     @include on950 {
       font-size: 70px;
     }
@@ -82,9 +90,14 @@
       transform: translate(141px, -30px);
       margin-bottom: -70px;
 
+      @include on1024 {
+        transform: translate(75px, -30px);
+      }
+
       @include on950 {
         font-size: 18px;
         margin-bottom: -50px;
+        transform: translate(90px, -20px);
       }
     }
 
@@ -95,8 +108,13 @@
       color: #000;
       transform: translate(122px, -28px);
 
+      @include on1024 {
+        transform: translate(90px, -30px);
+      }
+
       @include on950 {
         font-size: 18px;
+        transform: translate(90px, -20px);
       }
     }
   }
