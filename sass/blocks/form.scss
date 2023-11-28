@@ -6,7 +6,7 @@
 
   &__input {
     color: #000;
-    background-color: rgb(234, 234, 236);
+    
     font-size: 18px;
     font-weight: 300;
     outline: none;
@@ -19,6 +19,7 @@
 
     @include on700 {
       // opacity: 0.6;
+      background-color: rgb(234, 234, 236);
     }
 
     @include on430 {
