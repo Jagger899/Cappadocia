@@ -1,32 +1,82 @@
 .tour {
-    background-image: url("../images/header/header-bg.jpg");
-    // background-size: cover;
-    // background-position: center;
     background-repeat: no-repeat;
     padding-bottom: 490px;
     padding-top: 252px;
     margin-bottom: 202px;
     position: relative;
-    
-    padding-left: 20px;
-
     &--with-margin {
       margin-top: -98px;
     }
 
     @include on1901 {
+      background-image: url("../images/header/header-bg.jpg");
       background-size: cover;
       background-position: center;
     }
+
+    @include on1870 {
+      margin-bottom: 100px;
+      // padding-bottom: 300px;
+    }
+
+    @include on1770 {
+      padding-top: 150px;
+      // padding-bottom: 350px;
+    }
+
+    @include on1580 {
+      padding-bottom: 400px;
+    }
+
+    @include on1450 {
+      padding-bottom: 350px;
+    }
+
+    @include on1300 {
+      padding-bottom: 300px;
+      margin-bottom: 50px;
+    }
+
+    // @include on1899 {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
   
     @include on1070 {
-      padding-bottom: 400px;
-      margin-bottom: 100px;
+      // padding-bottom: 400px;
+      // margin-bottom: 100px;
+      padding-bottom: 200px;
     }
   
     @include on700 {
-      padding-bottom: 250px;
-      margin-bottom: 50px;
+      padding-bottom: 150px;
+      padding-top: 100px;
+    }
+
+    @include on510 {
+      padding-bottom: 100px;
+    }
+
+    @include on430 {
+      padding-bottom: 100px;
+    }
+
+    &__img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      // height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      z-index: -1;
+
+      @include on1901 {
+        display: none;
+      }
+      @include on1770 {
+        height: 100%;
+      }
     }
 
     &__title {
@@ -37,7 +87,16 @@
       position: relative;
       margin-right: 55px;
 
-      @include on1070 {
+      @include on1900 {
+        transform: translate(10px, -1px);
+      }
+
+      @include on1899 {
+        transform: translate(0);
+        margin-right: 0;
+      }
+
+      @include on1240 {
         font-size: 190px;
       }
 
@@ -53,6 +112,10 @@
         font-size: 80px;
       }
 
+      @include on430 {
+        font-size: 60px;
+      }
+
       &::after {
         content: "Ексклюзивний тур";
         font-family: 'Roboto Condensed', sans-serif;
@@ -63,7 +126,7 @@
         right: 81px;
         bottom: 7px;
 
-        @include on1070 {
+        @include on1240 {
           right: 150px;
           font-size: 40px;
         }
@@ -85,6 +148,7 @@
 
         @include on430 {
           right: 20px;
+          bottom: 0;
         }
       }
     }

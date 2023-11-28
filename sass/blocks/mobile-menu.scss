@@ -4,7 +4,7 @@
   // background-size: cover;
   // background-position: center;
   background-color: rgb(241, 164, 164);
-  min-height: 400px;
+  min-height: 100vh;
   z-index: 2;
   padding: 50px 30px 500px;
   max-width: 300px;
@@ -16,7 +16,11 @@
   transition: transform 300ms linear;
   transform: translate(-100%);
 
-  &:target {
+  // &:target {
+  //   transform: translate(0);
+  // }
+
+  &--open {
     transform: translate(0);
   }
 
@@ -26,14 +30,14 @@
   }
 
   &__close {
-    margin: 0 0 100px 200px;
+    margin: 0 0 160px 200px;
     display: inline-block;
     text-align: right;
 
     @include on510 {
       width: 24px;
       height: 24px;
-      margin: 0 0 50px 100px;
+      margin: 0 0 180px 100px;
     }
   }
 

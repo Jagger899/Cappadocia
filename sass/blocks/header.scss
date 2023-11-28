@@ -17,6 +17,7 @@
     position: sticky;
     background-color: rgba(241, 164, 164, 0.9);
     max-height: 100px;
+    // padding-top: 50px;
   }
 
   &__container {
@@ -24,12 +25,29 @@
     padding-right: 4px;
     padding-left:20px;
 
+    &--sticky{
+      padding-top: 50px;
+    }
+
     @include on1899 {
+      padding-top: 50px;
+      padding-right: 20px;
+    }
+
+    @include on1901 {
       padding-top: 50px;
       padding-right: 20px;
     }
   
     @include on1070 {
+      padding-top: 50px;
+    }
+
+    @include on430 {
+      padding-top: 40px;
+    }
+
+    &--on600 {
       padding-top: 50px;
     }
   }

@@ -1,6 +1,7 @@
 .price {
   margin-bottom: 87px;
   padding-left: 24px;
+  overflow-x: hidden;
   
     @include on1110 {
       margin-bottom: 100px;

@@ -5,10 +5,6 @@
     margin-bottom: 100px;
   }
 
-  // @include on1000 {
-  //   margin-bottom: 0;
-  // }
-
   @include on700 {
     margin-bottom: 50px;
   }
@@ -35,47 +31,105 @@
     }
   }
 
+  &__title {
+    margin-bottom: 75px;
+
+    @include on1300 {
+      margin-bottom: 80px;
+    }
+  
+    @include on1070 {
+      margin-bottom: 60px;
+    }
+  
+    @include on700 {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__subtitle {
+    transform: translate(180px, -25px);
+
+    @include on1240 {
+      transform: translate(150px, -25px);
+    }
+
+    @include on870 {
+      transform: translate(120px, -20px);
+    }
+  }
+
   &__content {
     max-width: 1560px;
     // margin: 0 auto;
     display: flex;
     gap: 55px;
     align-items: center;
+
     @include on1901 {
       margin: 0 auto;
+    }
+
+    @include on950 {
+      display: block;
     }
 
     // @include on1300 {
     //   flex-direction: column;
     // }
 
-    @include on1000 {
-      display: block;
-    }
+    // @include on1000 {
+    //   display: block;
+    // }
   }
 
   &__swiper {
     margin-left: 0;
-    flex-basis: 960px;
+    // flex-basis: 960px;
     // flex-shrink: 0;
     position: relative;
+    width: 61%;
+    height: 700px;
+    
+    @include on1899 {
+        transform: translate(0);
+        // flex-basis: 0;
+        width: 50%;
+        aspect-ratio: 9.6/7;
+      }
+
+     @include on1770 {
+      height: 600px;
+     } 
+
+     @include on1240 {
+      height: 500px;
+     }
+
+     @include on950 {
+      width: 100%;
+     }
+
+     @include on510 {
+      height: 300px;
+     }
   }
 
   &__slide {
-    position: relative;
-      height: 700px;
+    // position: relative;
+      // height: 700px;
     
-      @include on820 {
-        height: 500px;
-      }
+      // @include on1110 {
+      //   height: 500px;
+      // }
 
-      @include on650 {
-        height: 350px;
-      }
+      // @include on650 {
+      //   height: 350px;
+      // }
     
-      @include on510 {
-        height: 250px;
-      }
+      // @include on510 {
+      //   height: 250px;
+      // }
   }
 
   &__img {
@@ -85,15 +139,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 
-    @include on1300 {
-      object-fit: contain;
-      object-position: center;
-    }
+    // @include on1300 {
+    //   object-fit: contain;
+    //   object-position: center;
+    // }
 
-    @include on1000 {
-      object-fit: cover;
-    }
+    // @include on1000 {
+    //   object-fit: cover;
+    // }
   }
 
   &__left {

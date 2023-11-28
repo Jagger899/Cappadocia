@@ -49,7 +49,7 @@
     }
 
     @include on700 {
-      background-image: url("../images/application/bg-balls.webp");
+      background-image: linear-gradient(rgba(228, 204, 204, 0.4), rgba(214, 185, 185, 0.4)), url("../images/application/bg-balls.webp");
       background-position: center;
       background-size: cover;
     }

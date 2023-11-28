@@ -15,7 +15,7 @@
 </head>
 <body>
   <div class="header" id="header">
-    <div class="container header__container">
+    <div class="container header__container" id="header__container">
       <div class="nav header__nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link">Маршрут</a></li>
@@ -25,7 +25,7 @@
         <a href="" class="nav__link nav__link-tel">+38(066)555-777-6</a>
       </div>
       <div class="nav-mobile">
-        <a href="#mobile-menu" class="nav-mobile__link">
+        <a href="#mobile-menu" class="nav-mobile__link" id="mobile-menu-open">
           <img class="nav-mobile__icon" src="./images/header/menu-open-black.svg" alt="">
         </a>
         <a href="" class="nav__link nav__link-tel">+38(066)555-777-6</a>
@@ -34,7 +34,7 @@
     </div>
     <div class="mobile-menu header__mobile-menu" id="mobile-menu">
       <div class="mobile-menu__container">
-        <a href="#" class="mobile-menu__close" id="mobile-menu">
+        <a href="#" class="mobile-menu__close" id="mobile-menu-close">
           <img src="./images/header/menu-close.svg" alt="close" class="mobile-menu__icon">
         </a>
       </div>
@@ -133,10 +133,18 @@
     <div class="container tour__container">
       <h1 class="tour__title">Cappadocia</h1>
     </div>
+    <picture>
+      <source srcset="./images/header/header-bg.webp" type="image/webp" class="tour__img">
+      <source srcset="./images/header/header-bg.jpg" type="image/jpg" class="tour__img">
+      <img src="./images/header/header-bg.jpg" alt="photo" class="tour__img">
+    </picture>
   </section>
-  <section class="fairy-tail">
+  <section class="section fairy-tail">
     <div class="container fairy-tail__container">
-      <img src="./images/fairy-tale/logo.png" alt="" class="fairy-tail__logo">
+      <!-- <img src="./images/fairy-tale/logo.png" alt="" class="fairy-tail__logo"> -->
+      <h2 class="section__title fairy-tail__title">
+        Fairy tail <span class="section__subtitle fairy-tail__subtitle">Казкова країна чудес</span>
+      </h2>
     </div>
       <div class="fairy-tail__content">
         <div class="swiper fairy-tail__swiper">
@@ -196,7 +204,10 @@
   <section class="trip">
     <div class="trip__container">
       <div class="trip__description">
-        <img src="./images/trip/trip.svg" alt="" class="trip__logo">
+        <!-- <img src="./images/trip/trip.svg" alt="" class="trip__logo"> -->
+        <h2 class="section__title trip__title">
+          Our trip <span class="section__subtitle trip__subtitle">Маршрут</span>
+        </h2>
         <div class="trip__timetable-box">
           <div class="trip__timetable">
             <p class="trip__day">День 1</p>
@@ -277,9 +288,57 @@
 
   <section class="hotel">
     <div class="container">
-      <img src="./images/hotel/logo.png" class="hotel__logo" alt="logo" >
+      <!-- <img src="./images/hotel/logo.png" class="hotel__logo" alt="logo" > -->
+    <h2 class="section__title hotel__title">
+      Hotel <span class="section__subtitle hotel__subtitle">Sultan Cave Suites</span>
+    </h2>
     </div>
     <div class="container hotel__container">
+      <div class="swiper hotel__swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./images/hotel/img2.webp" type="image/webp" class="hotel__swiper-img">
+              <source srcset="./images/hotel/img2.jpg" type="image/jpg" class="hotel__swiper-img">
+      
+              <img src="./images/hotel/img2.jpg" alt="photo" class="hotel__swiper-img">
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./images/hotel/img3.webp" type="image/webp" class="hotel__swiper-img">
+              <source srcset="./images/hotel/img3.jpg" type="image/jpg" class="hotel__swiper-img">
+      
+              <img src="./images/hotel/img3.jpg" alt="photo" class="hotel__swiper-img">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./images/hotel/img4.webp" type="image/webp" class="hotel__swiper-img">
+              <source srcset="./images/hotel/img4.jpg" type="image/jpg" class="hotel__swiper-img">
+      
+              <img src="./images/hotel/img4.jpg" alt="photo" class="hotel__swiper-img">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./images/hotel/img5.webp" type="image/webp" class="hotel__swiper-img">
+              <source srcset="./images/hotel/img5.jpg" type="image/jpg" class="hotel__swiper-img">
+      
+              <img src="./images/hotel/img5.jpg" alt="photo" class="hotel__swiper-img">
+            </picture>
+          </div>
+      
+        </div>
+        <div class="trip__left swiper-button-left">
+          <img src="./images/fairy-tale/arrow-left.svg" alt="">
+        </div>
+        <div class="trip__right swiper-button-right">
+          <img src="./images/fairy-tale/arrow-right.svg" alt="">
+        </div>
+      </div>
+
       <div class="hotel__main-photo">
         <picture>
           <source srcset="./images/hotel/img1.webp" type="image/webp">
