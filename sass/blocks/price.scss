@@ -2,6 +2,10 @@
   margin-bottom: 87px;
   padding-left: 24px;
   overflow-x: hidden;
+
+  @include on1899 {
+    padding-left: 0;
+  }
   
     @include on1110 {
       margin-bottom: 100px;
@@ -24,6 +28,18 @@
     @include on1110 {
       margin-bottom: 40px;
     }
+  }
+
+  &__title {
+    margin-bottom: 74px;
+
+    @include on700 {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__subtitle {
+    transform: translate(121px, -28px);
   }
 
   &__container {

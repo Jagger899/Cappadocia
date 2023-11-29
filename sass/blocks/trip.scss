@@ -1,8 +1,12 @@
 .trip {
   display: flex;
   justify-content: right;
-  overflow: hidden;
+  overflow-x: hidden;
   margin-bottom: 188px;
+
+  @include on1901 {
+    justify-content: center;
+  }
 
   @include on1580 {
     display: block;

@@ -30,4 +30,9 @@
 .swiper-button-right,
 .swiper-button-left {
   cursor: pointer;
+
+  @include on700 {
+    width: 36px;
+    height: 36px;
+  }
 }

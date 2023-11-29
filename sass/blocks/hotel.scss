@@ -1,6 +1,10 @@
 .hotel {
     margin-bottom: 202px;
     padding-left: 24px;
+
+    @include on1899 {
+      padding-left: 0;
+    }
   
     @include on1110 {
       margin-bottom: 100px;

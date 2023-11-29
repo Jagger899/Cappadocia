@@ -6,7 +6,7 @@
   background-color: rgb(241, 164, 164);
   min-height: 100vh;
   z-index: 2;
-  padding: 50px 30px 500px;
+  padding: 20px 30px;
   max-width: 300px;
   position: absolute;
   left: 0;
@@ -15,7 +15,7 @@
   top: 0;
   transition: transform 300ms linear;
   transform: translate(-100%);
-
+  
   // &:target {
   //   transform: translate(0);
   // }
@@ -29,15 +29,25 @@
     max-width: 200px;
   }
 
-  &__close {
-    margin: 0 0 160px 200px;
-    display: inline-block;
-    text-align: right;
+  &__container {
+      display: flex;
+        justify-content: flex-end;
+  }
 
+  &__content {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  &__close {
+ 
     @include on510 {
       width: 24px;
       height: 24px;
-      margin: 0 0 180px 100px;
+      // margin: 0 0 180px 100px;
     }
   }
 
